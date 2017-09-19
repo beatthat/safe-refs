@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace BeatThat
 {
-	/// <summary>
+	/// <summary> T 4!
 	/// For the case where you want to use a closure from a Monobehaviour 
 	/// without risking a NullRef error on the callback if the monobehaviour gets destroyed, say, by a scene change.
 	/// 
