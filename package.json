@@ -1,7 +1,7 @@
 {
     "name": "safe-refs",
     "scope": "ape",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Wrappers for Unity components and callbacks that handle the case that a Component's GameObject may have been destroyed.",
     "main": "index.js",
     "repository": {
@@ -31,6 +31,6 @@
     },
     "dependencies": {
         "path": "^0.12.7",
-        "unity-npm-utils": "github:beatthat/unity-npm-utils#semver:^0.0.32"
+        "unity-npm-utils": "github:beatthat/unity-npm-utils#semver:^0.0.37"
     }
 }
