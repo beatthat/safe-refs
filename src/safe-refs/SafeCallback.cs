@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace BeatThat
 {
 	/// <summary>
-	/// For when you want to use a closure from a Monobehaviour 
+	/// For the case where you want to use a closure from a Monobehaviour 
 	/// without risking a NullRef error on the callback if the monobehaviour gets destroyed, say, by a scene change.
 	/// 
 	/// Wraps callbacks with a check that the owner is still valid or some other user-defined cancel condition.

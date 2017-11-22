@@ -3,8 +3,8 @@
 namespace BeatThat
 {
 	/// <summary>
-	/// Holds a ref and if that ref is to a UnityEngine Component, 
-	/// returns the value as <c>null</c> if the Component's GameObject has been destroyed.
+	/// Holds a ref and if that ref is to a UnityEngine component, 
+	/// returns the value as null if the Component's GameObject has been destroyed.
 	/// 
 	/// Exists to address the problem of holding references to Unity Component instances,
 	/// where the Component's GameObject may be destroyed by some external actor.
