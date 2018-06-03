@@ -1,7 +1,7 @@
 {
   "name": "safe-refs",
   "scope": "beatthat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wrappers for Unity components and callbacks that handle the case that a Component's GameObject may have been destroyed.",
   "main": "index.js",
   "repository": {
