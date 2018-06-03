@@ -2,7 +2,7 @@
   "packages": {
     "safe-refs": {
       "name": "safe-refs",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "config": {},
       "repository": {
         "type": "git",
