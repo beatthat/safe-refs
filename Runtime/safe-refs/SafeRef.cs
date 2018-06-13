@@ -1,6 +1,7 @@
+using BeatThat.Properties;
 using UnityEngine;
 
-namespace BeatThat
+namespace BeatThat.SafeRefs
 {
 	/// <summary>
 	/// Holds a ref and if that ref is to a UnityEngine component, 
@@ -91,3 +92,4 @@ namespace BeatThat
 		private bool m_valueIsComponent;
 	}
 }
+

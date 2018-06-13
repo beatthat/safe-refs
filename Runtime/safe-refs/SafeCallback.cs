@@ -1,7 +1,8 @@
+using BeatThat.Properties;
 using UnityEngine;
 using System.Collections;
 
-namespace BeatThat
+namespace BeatThat.SafeRefs
 {
 	/// <summary>
 	/// For the case where you want to use a closure from a Monobehaviour 
@@ -57,3 +58,4 @@ namespace BeatThat
 		}
 	}
 }
+
