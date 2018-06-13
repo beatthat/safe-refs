@@ -1,17 +1,16 @@
-using BeatThat.Properties;
 using UnityEngine;
 
 namespace BeatThat.SafeRefs
 {
-	/// <summary>
-	/// Holds a ref and if that ref is to a UnityEngine component, 
-	/// returns the value as null if the Component's GameObject has been destroyed.
-	/// 
-	/// Exists to address the problem of holding references to Unity Component instances,
-	/// where the Component's GameObject may be destroyed by some external actor.
-	/// When this occurs, there is no way to tell from from a Component reference that it has become invalid.
-	/// </summary>
-	public struct SafeRef<T> where T : class
+    /// <summary>
+    /// Holds a ref and if that ref is to a UnityEngine component, 
+    /// returns the value as null if the Component's GameObject has been destroyed.
+    /// 
+    /// Exists to address the problem of holding references to Unity Component instances,
+    /// where the Component's GameObject may be destroyed by some external actor.
+    /// When this occurs, there is no way to tell from from a Component reference that it has become invalid.
+    /// </summary>
+    public struct SafeRef<T> where T : class
 	{
 		public SafeRef(T c)
 		{
