@@ -17,8 +17,36 @@ An instance of SafeRef<MyComponent>.value will be null if the component or its G
 
 ```csharp
 MyComponent someComponent = GetComponentsInChildren<MyComponent>();
+
 var ref = new SafeRef<MyComponent>(someComponent);
+
 // ref.value will return someComponent
 Destroy(someComponent.gameObject);
 // ref.value will return null
+```
+
+...SafeRefs are structs to handle them accordingly
+
+```csharp
+public class HandlesStructCorrectly
+{
+  public void SetComponent(MyComponent c) {
+    m_ref = new SafeRef<MyComponent>(c);
+  }
+  private SafeRef<MyComponent> m_ref;
+}
+
+public class HandlesStructIncorrectly
+{
+  public void SetComponent(MyComponent c) {
+    var ref = m_ref; // ref is a copy of m_ref, no longer a reference to the same thing
+    ref.value = c; // m_ref has not changed
+
+    // the example above is contrived
+    // but just to illustrate the point
+    // that you need to be careful
+    // to avoid editing copies of struct
+  }
+  private SafeRef<MyComponent> m_ref;
+}
 ```
