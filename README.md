@@ -1,4 +1,4 @@
-<a href="readme"></a>Use safe refs to hold references to Unity components that may be destroyed.
+<a href="readme"></a>When components keep references to other components, it's easy to end up with null pointer problems. SafeRefs are a simple way to always know whether a component reference is valid.
 
 ## Install
 
