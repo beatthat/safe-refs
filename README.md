@@ -1,4 +1,4 @@
-Use safe refs to hold references to Unity components that may be destroyed. An instance of SafeRef<MyComponent>.value will be null if the component or it's GameObject has been destroyed.
+<a href="readme"></a>Use safe refs to hold references to Unity components that may be destroyed. An instance of SafeRef<MyComponent>.value will be null if the component or its GameObject has been destroyed.
 
 ````c#
 MyComponent someComponent = GetComponentsInChildren<MyComponent>();
