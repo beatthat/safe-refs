@@ -5,7 +5,7 @@
 From your unity project folder:
 
     npm init --force # only if you don't yet have a package.json file
-    npm install --save beatthat/dependency-injection
+    npm install --save beatthat/safe-refs
 
 The package and all its dependencies will be installed under Assets/Plugins/packages.
 
