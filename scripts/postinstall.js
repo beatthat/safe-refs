@@ -1,4 +1,4 @@
-const unpm = require('unity-npm-utils')
+const unpm = require('@beatthat/unity-npm-utils')
 const path = require('path')
 
 const pkgRoot = path.join(__dirname, '..')

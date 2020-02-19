@@ -1,4 +1,4 @@
-const unpm = require('unity-npm-utils')
+const unpm = require('@beatthat/unity-npm-utils')
 try {
     unpm.unityPackage.generateDocs().then(_ => console.log('doxygen complete'))
 }
